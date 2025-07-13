@@ -75,8 +75,8 @@ const Work = () => {
 
     return (
         <section className="work section" id="projects">
-            <h2 className="section__title">Projects</h2>
-            <span className="section__subtitle">My Projects</span>
+            <h2 className="section__title">Projetos</h2>
+            <span className="section__subtitle">Meus Projetos</span>
 
             <div className={`work__container container grid ${animando ? 'fade-out' : 'fade-in'}`}>
                 <div className="work__data">

@@ -4,8 +4,8 @@ import DadosSkills from './DadosSkills';
 const Skills = () => {
     return (
         <section className="skills section" id="skills">
-            <h2 className="section__title">Skills</h2>
-            <span className="section__subtitle">My technical level</span>
+            <h2 className="section__title">Habilidades</h2>
+            <span className="section__subtitle">Meu nível técnico</span>
 
             <div className="skills__containeir container grid">
                 <DadosSkills />

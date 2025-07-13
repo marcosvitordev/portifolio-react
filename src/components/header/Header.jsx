@@ -17,22 +17,22 @@ const Header = () => {
                     <ul className='nav__list grid'>
                         <li className='nav__item'>
                             <a href='#home' onClick={() => setActiveNav("#home")} className={activeNav === '#home' ? 'nav__link active-link' : 'nav__link'}>
-                                <i className='uil uil-estate nav__icon'></i> Home
+                                <i className='uil uil-estate nav__icon'></i> Início
                             </a>
                         </li>
                         <li className='nav__item'>
                             <a href='#about' onClick={() => setActiveNav("#about")} className={activeNav === '#about' ? 'nav__link active-link' : 'nav__link'}>
-                                <i className='uil uil-user nav__icon'></i> About
+                                <i className='uil uil-user nav__icon'></i> Sobre Mim
                             </a>
                         </li>
                         <li className='nav__item'>
                             <a href='#skills' onClick={() => setActiveNav("#skills")} className={activeNav === '#skills' ? 'nav__link active-link' : 'nav__link'}>
-                                <i className='uil uil-file-alt nav__icon'></i> Skills
+                                <i className='uil uil-file-alt nav__icon'></i> Habilidades
                             </a>
                         </li>
                         <li className='nav__item'>
                             <a href='#projects' onClick={() => setActiveNav("#projects")} className={activeNav === '#projects' ? 'nav__link active-link' : 'nav__link'}>
-                                <i className='uil uil-briefcase-alt nav__icon'></i> Projects
+                                <i className='uil uil-briefcase-alt nav__icon'></i> Projetos
                             </a>
                         </li>
                         {/* <li className='nav__item'>
