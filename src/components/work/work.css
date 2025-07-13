@@ -31,8 +31,9 @@
 }
 
 .work__img {
-  width: 350px;
-  border-radius: 1.5rem;
+  /* width: 350px; */
+  height: 250px;
+  border-radius: 0.5rem;
   border-left: 12px solid #ccc;
 }
 

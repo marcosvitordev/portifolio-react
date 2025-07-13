@@ -39,11 +39,11 @@ const Contact = () => {
                         </div>
 
                         <div className="contact__card">
-                            <i className="bx bxl-messenger contact__card-icon"></i>
-                            <h3 className="contact__card-title">Messenger</h3>
-                            <span className="contact__card-data">marcos.vitor.948726</span>
+                            <i className="bx bxl-telegram contact__card-icon"></i>
+                            <h3 className="contact__card-title">Telegram</h3>
+                            <span className="contact__card-data">marcosvitor_0</span>
 
-                            <a href="https://m.me/crypticalcoder" className="contact__button">Escreva-me{" "} <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                            <a href="https://t.me/marcosvitor_0" className="contact__button">Escreva-me{" "} <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
                         </div>
                     </div>
                 </div>
@@ -59,7 +59,7 @@ const Contact = () => {
                             <input type="email" name="email" className='contact__form-input' placeholder='Digite seu email' />
                         </div>
                         <div className="contact__form-div contact__form-area">
-                            <label className="contact__form-tag">Projeto</label>
+                            <label className="contact__form-tag">Mensagem</label>
                             <textarea name="menssagem" className='contact__form-input' placeholder='Escreva sua mensagem' rows="10" cols="30"></textarea>
                         </div>
                         <button className="button button--flex">
