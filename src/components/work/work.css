@@ -1,6 +1,5 @@
 /* ========== SECTION ========== */
 .work {
-  /* background: #fff; */
   padding: 4rem 2rem;
   color: #222;
 }
@@ -18,21 +17,31 @@
   margin-bottom: 3rem;
 }
 
-/* ========== CONTAINER ========== */
+/* ========== CONTAINER (ALTURA FIXA) ========== */
 .work__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   column-gap: 4rem;
+
+  /* 🔒 TRAVA O "PULO" */
+  min-height: 420px; /* ajuste se quiser mais/menos */
 }
 
+/* ========== IMAGEM (TRAVADA) ========== */
 .work__img-wrapper {
+  width: 350px;
+  height: 250px;
   justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .work__img {
-  /* width: 350px; */
-  height: 250px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 0.5rem;
   border-left: 12px solid #ccc;
 }
@@ -41,6 +50,10 @@
 .work__data {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+
+  /* 🔒 TRAVA ALTURA DO BLOCO DE TEXTO */
+  min-height: 320px;
 }
 
 .work__number {
@@ -55,10 +68,15 @@
   color: #222;
 }
 
+/* 🔒 DESCRIÇÃO COM ALTURA FIXA (sem mover layout) */
 .work__description {
   color: #666;
   font-size: 14px;
   margin-bottom: 1rem;
+
+  max-height: 120px;     /* ajuste conforme quiser */
+  overflow-y: auto;      /* cria scroll interno se passar */
+  padding-right: 6px;    /* espaço pro scroll não colar no texto */
 }
 
 .work__techs {
@@ -80,6 +98,9 @@
   font-weight: 600;
   text-decoration: none;
   transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .work__buttons a:hover {
@@ -89,7 +110,7 @@
 
 /* ========== NAVIGATION ========== */
 .work__nav {
-max-width: 968px;
+  max-width: 968px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -113,43 +134,59 @@ max-width: 968px;
   background-color: #aaa;
 }
 
+/* ===== TRANSIÇÃO COM FADE + LEVE MOVIMENTO ===== */
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.fade-out {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.work__link__link {
+  font-size: 1.5rem;
+}
+
 /* ========== RESPONSIVO ========== */
 @media screen and (max-width: 992px) {
   .work__container {
     grid-template-columns: 1fr;
     row-gap: 2rem;
     text-align: center;
+
+    /* ainda fixa altura, mas menor no mobile */
+    min-height: 520px;
   }
-.work__title{
+
+  .work__title {
     font-size: 1.4rem;
-}
-  /* .work__img {
-    width: 220px;
-  } */
+  }
+
+  .work__img-wrapper {
+    width: 100%;
+    max-width: 360px;
+    height: 220px;
+  }
 
   .work__buttons {
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .work__nav {
     justify-content: right;
-
   }
+
   .work__nav button {
-  padding: 8px 14px;
-}
-}
-/* ===== TRANSIÇÃO COM FADE ===== */
-.fade-in {
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
-}
+    padding: 8px 14px;
+  }
 
-.fade-out {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.work__link__link{
-  font-size: 1.5rem;
+  /* descrição com altura um pouco maior no mobile */
+  .work__description {
+    max-height: 140px;
+  }
 }
