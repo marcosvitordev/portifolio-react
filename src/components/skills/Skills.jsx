@@ -7,7 +7,7 @@ const Skills = () => {
             <h2 className="section__title">Habilidades</h2>
             <span className="section__subtitle">Meu nível técnico</span>
 
-            <div className="skills__containeir container grid">
+            <div className="skills__container container">
                 <DadosSkills />
             </div>
         </section>
