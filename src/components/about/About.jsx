@@ -17,12 +17,13 @@ const About = () => {
 
           <p className="about__description">
             Olá, meu nome é Marcos Vitor. Tenho interesse em desenvolvimento web
-            desde 2020. Atualmente, curso Análise e Desenvolvimento de Sistemas
-            e Engenharia de Software, além de possuir formação técnica em
-            Informática. Meu foco está no desenvolvimento completo de aplicações
-            (full stack), envolvendo front-end, back-end, interfaces
-            responsivas, acessibilidade e boas práticas de engenharia de
-            software, sempre buscando soluções eficientes e bem estruturadas.
+            desde 2020. Atuo profissionalmente como Analista de Sistemas e
+            atualmente estou cursando Engenharia de Software, além de possuir
+            formação técnica em Informática. Meu foco está no desenvolvimento
+            completo de aplicações (full stack), envolvendo front-end, back-end,
+            interfaces responsivas, acessibilidade e boas práticas de
+            engenharia, sempre buscando entregar soluções eficientes, escaláveis
+            e bem estruturadas.
           </p>
 
           <a download="" href={CV} className="button button--flex">
