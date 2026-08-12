@@ -8,6 +8,7 @@ import { Education } from '@/components/sections/Education';
 import { Experience } from '@/components/sections/Experience';
 import { Hero } from '@/components/sections/Hero';
 import { Skills } from '@/components/sections/Skills';
+import { useInitialHashNavigation } from '@/hooks/useInitialHashNavigation';
 import './styles/components.css';
 import './styles/sections.css';
 import './styles/responsive.css';
@@ -24,6 +25,8 @@ function SectionFallback() {
 }
 
 function App() {
+  useInitialHashNavigation();
+
   return (
     <>
       <SkipLink />
