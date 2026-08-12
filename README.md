@@ -1,70 +1,158 @@
-# Getting Started with Create React App
+# Marcos Vitor — Portfólio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Portfólio profissional de **Marcos Vitor**, Analista de Sistemas e Desenvolvedor Full Stack. A aplicação apresenta trajetória, formação, tecnologias e projetos reais em uma experiência responsiva, acessível e preparada para temas claro e escuro.
 
-## Available Scripts
+[Acessar portfólio](https://marcosvitordev.netlify.app/) · [Reportar problema](https://github.com/marcosvitordev/portifolio-react/issues)
 
-In the project directory, you can run:
+![Retrato de Marcos Vitor](public/marcos-vitor.png)
 
-### `npm start`
+## Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- tema claro/escuro com preferência do sistema, troca manual, persistência e prevenção de flash;
+- navegação sticky, menu mobile, scroll spy, deep links e atalho para o conteúdo;
+- seções de experiência e formação baseadas no currículo existente;
+- tecnologias organizadas por categoria, com filtros e descrições;
+- projetos com busca, categorias, ordenação, destaques e estado vazio;
+- modal acessível com `Escape`, foco cíclico, clique externo e restauração de foco;
+- formulário com validação, loading, sucesso, erro, honeypot e bloqueio de envio duplicado;
+- SEO com canonical, Open Graph, Twitter Cards, sitemap, robots e JSON-LD;
+- code splitting para Projetos e Contato;
+- pipeline de qualidade para formatação, lint, testes e build.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Stack
 
-### `npm test`
+| Camada    | Tecnologias                    |
+| --------- | ------------------------------ |
+| Interface | React 19, TypeScript, CSS      |
+| Build     | Vite                           |
+| Ícones    | Lucide React                   |
+| Contato   | EmailJS                        |
+| Testes    | Vitest, Testing Library, jsdom |
+| Qualidade | ESLint, Prettier, EditorConfig |
+| CI        | GitHub Actions                 |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Estrutura
 
-### `npm run build`
+```text
+src/
+├── assets/          # imagens, screenshots e currículo
+├── components/
+│   ├── common/      # controles e elementos compartilhados
+│   ├── contact/     # formulário de contato
+│   ├── layout/      # header e footer
+│   ├── projects/    # cards, filtros e modal
+│   └── sections/    # seções da página
+├── constants/       # configuração pública do site
+├── data/            # conteúdo tipado do portfólio
+├── hooks/           # tema, filtros, scroll e preferências
+├── services/        # integração com EmailJS
+├── styles/          # tokens, base, componentes e breakpoints
+├── tests/           # testes unitários e de interação
+├── types/           # contratos do domínio
+└── utils/           # validação e funções puras
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Detalhes adicionais estão em [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Desenvolvimento local
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Requisitos
 
-### `npm run eject`
+- Node.js 22.12 ou superior;
+- npm 10 ou superior.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Instalação
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/marcosvitordev/portifolio-react.git
+cd portifolio-react
+npm ci
+cp .env.example .env
+npm run dev
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+No PowerShell, copie o ambiente com:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```powershell
+Copy-Item .env.example .env
+```
 
-## Learn More
+### EmailJS
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Preencha o `.env` local. Nunca versione esse arquivo.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```env
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+```
 
-### Code Splitting
+Sem essas variáveis, o portfólio continua funcionando e orienta o visitante a usar o e-mail direto.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Scripts
 
-### Analyzing the Bundle Size
+| Comando                          | Finalidade                              |
+| -------------------------------- | --------------------------------------- |
+| `npm run dev`                    | servidor Vite para desenvolvimento      |
+| `npm run build`                  | TypeScript estrito e bundle de produção |
+| `npm run preview`                | prévia local do build                   |
+| `npm run lint`                   | análise estática sem warnings           |
+| `npm run format`                 | formata os arquivos suportados          |
+| `npm run format:check`           | valida a formatação                     |
+| `npm run test:run`               | executa a suíte uma vez                 |
+| `npm run check`                  | formatação, lint, testes e build        |
+| `npm run audit:history -- <SHA>` | audita commits após uma base            |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Responsividade
 
-### Making a Progressive Web App
+O layout foi projetado com comportamento fluido e revisado nos pontos de referência de 320, 375, 425, 768, 1024, 1280, 1440 e 1920 px. Containers, grids, navegação, formulários e modais evitam larguras fixas que gerem scroll horizontal.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Acessibilidade
 
-### Advanced Configuration
+- landmarks e hierarquia de headings;
+- navegação completa por teclado;
+- foco visível e skip link;
+- labels, estados `aria-*` e mensagens ao vivo no formulário;
+- nomes acessíveis para links e botões com ícone;
+- modal com gerenciamento de foco;
+- contraste para temas claro e escuro;
+- respeito a `prefers-reduced-motion`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Consulte [docs/ACCESSIBILITY.md](docs/ACCESSIBILITY.md) para a estratégia e o checklist manual.
 
-### Deployment
+## SEO e performance
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Metadados sociais, canonical, robots, sitemap e schemas `Person`/`WebSite` ficam em `index.html` e `public/`. Imagens possuem dimensões e textos alternativos; conteúdos abaixo da dobra usam lazy loading; as seções mais pesadas têm chunks independentes; fontes usam preconnect.
 
-### `npm run build` fails to minify
+## Testes e build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm run test:run
+npm run lint
+npm run build
+```
+
+A suíte cobre Header, ThemeToggle, Hero, ProjectCard, ProjectFilters, Projects, modal, formulário e validação.
+
+## Deploy
+
+O repositório contém `_redirects` e `_headers` compatíveis com Netlify. O pipeline não realiza deploy automático: publicação e credenciais permanecem sob controle do proprietário.
+
+## Histórico da modernização
+
+Esta versão substitui incrementalmente a base Create React App por React + Vite + TypeScript. Os commits da modernização foram criados com datas reais de execução. O projeto **não usa datas retroativas para representar atividade anterior**; consulte [CHANGELOG.md](CHANGELOG.md) e [docs/HISTORY.md](docs/HISTORY.md).
+
+## Roadmap
+
+- [ ] definir e documentar a licença do projeto;
+- [ ] criar uma imagem social dedicada em proporção 1.91:1;
+- [ ] avaliar métricas de produção após a próxima publicação;
+- [ ] ampliar os detalhes de projetos quando novos dados verificáveis estiverem disponíveis.
+
+## Autor
+
+**Marcos Vitor** · [GitHub @marcosvitordev](https://github.com/marcosvitordev)
+
+## Licença
+
+O repositório ainda não possui uma licença definida. Até que o proprietário escolha e adicione uma licença explícita, nenhum direito de reutilização é concedido por padrão.
