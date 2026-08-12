@@ -3,3 +3,7 @@ coverage
 node_modules
 package-lock.json
 src/assets/**/*.pdf
+public/_headers
+public/_redirects
+public/robots.txt
+public/sitemap.xml
