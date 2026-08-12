@@ -3,17 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Marcos Vitor, analista de sistemas e desenvolvedor full stack especializado em aplicações web, APIs e soluções de software."
+    />
+    <meta name="author" content="Marcos Vitor" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="theme-color" content="#07111f" />
+    <link rel="canonical" href="https://marcosvitordev.netlify.app/" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Portfólio Marcos Vitor" />
+    <meta property="og:title" content="Marcos Vitor | Desenvolvedor Full Stack" />
+    <meta
+      property="og:description"
+      content="Projetos, trajetória e tecnologias de Marcos Vitor, analista de sistemas e desenvolvedor full stack."
+    />
+    <meta property="og:url" content="https://marcosvitordev.netlify.app/" />
+    <meta property="og:image" content="https://marcosvitordev.netlify.app/marcos-vitor.png" />
+    <meta property="og:image:alt" content="Retrato de Marcos Vitor" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Marcos Vitor | Desenvolvedor Full Stack" />
+    <meta
+      name="twitter:description"
+      content="Projetos, trajetória e tecnologias de Marcos Vitor."
+    />
+    <meta name="twitter:image" content="https://marcosvitordev.netlify.app/marcos-vitor.png" />
     <script>
       (() => {
         const key = 'marcos-portfolio-theme';
         const saved = localStorage.getItem(key);
         const preferred = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-        document.documentElement.dataset.theme = saved === 'light' || saved === 'dark' ? saved : preferred;
+        document.documentElement.dataset.theme =
+          saved === 'light' || saved === 'dark' ? saved : preferred;
       })();
     </script>
     <title>Marcos Vitor | Desenvolvedor Full Stack</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://marcosvitordev.netlify.app/#person",
+            "name": "Marcos Vitor",
+            "url": "https://marcosvitordev.netlify.app/",
+            "image": "https://marcosvitordev.netlify.app/marcos-vitor.png",
+            "jobTitle": "Analista de Sistemas e Desenvolvedor Full Stack",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Sena Madureira",
+              "addressRegion": "AC",
+              "addressCountry": "BR"
+            },
+            "alumniOf": { "@type": "CollegeOrUniversity", "name": "Instituto Federal do Acre" },
+            "sameAs": [
+              "https://github.com/marcosvitordev",
+              "https://www.linkedin.com/in/marcosvitor0/"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://marcosvitordev.netlify.app/#website",
+            "url": "https://marcosvitordev.netlify.app/",
+            "name": "Portfólio Marcos Vitor",
+            "inLanguage": "pt-BR",
+            "author": { "@id": "https://marcosvitordev.netlify.app/#person" }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
