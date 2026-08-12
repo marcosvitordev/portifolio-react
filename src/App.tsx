@@ -12,6 +12,7 @@ import { useInitialHashNavigation } from '@/hooks/useInitialHashNavigation';
 import './styles/components.css';
 import './styles/sections.css';
 import './styles/responsive.css';
+import './styles/classic.css';
 
 const Projects = lazy(() => import('@/components/sections/Projects'));
 const Contact = lazy(() => import('@/components/sections/Contact'));

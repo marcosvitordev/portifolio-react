@@ -9,7 +9,7 @@
     />
     <meta name="author" content="Marcos Vitor" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
-    <meta name="theme-color" content="#07111f" />
+    <meta name="theme-color" content="#fafafa" />
     <link rel="canonical" href="https://marcosvitordev.netlify.app/" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -42,9 +42,8 @@
       (() => {
         const key = 'marcos-portfolio-theme';
         const saved = localStorage.getItem(key);
-        const preferred = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
         document.documentElement.dataset.theme =
-          saved === 'light' || saved === 'dark' ? saved : preferred;
+          saved === 'light' || saved === 'dark' ? saved : 'light';
       })();
     </script>
     <title>Marcos Vitor | Desenvolvedor Full Stack</title>

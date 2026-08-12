@@ -1,4 +1,4 @@
-import { Menu, TerminalSquare, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { ThemeToggle } from '@/components/common/ThemeToggle';
 import { navigationItems } from '@/data/navigation';
@@ -22,12 +22,7 @@ export function Header() {
     <header className="site-header">
       <nav className="header-inner container" aria-label="Navegação principal">
         <a className="brand" href="#home" aria-label="Marcos Vitor — início">
-          <span className="brand-mark" aria-hidden="true">
-            <TerminalSquare />
-          </span>
-          <span>
-            marcosvitor<span>.dev</span>
-          </span>
+          marcosvitordev
         </a>
 
         <div className={`nav-panel${menuOpen ? ' is-open' : ''}`} id="main-navigation">

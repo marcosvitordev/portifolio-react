@@ -18,9 +18,9 @@ export default function Projects() {
       <div className="container">
         <SectionHeading
           id="projects-title"
-          eyebrow="Projetos"
-          title="Soluções construídas para contextos reais"
-          description="Explore sistemas full stack, aplicações acadêmicas e experiências de produto. Links só aparecem quando estão realmente disponíveis."
+          eyebrow="Portfólio"
+          title="Meus projetos"
+          description="Alguns sistemas e aplicações que desenvolvi ao longo da minha trajetória."
         />
 
         <ProjectFilters

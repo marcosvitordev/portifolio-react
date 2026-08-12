@@ -9,7 +9,7 @@ const getInitialTheme = (): Theme => {
     return document.documentElement.dataset.theme as Theme;
   }
 
-  return globalThis.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  return 'light';
 };
 
 export function useTheme() {
@@ -20,7 +20,7 @@ export function useTheme() {
     localStorage.setItem(STORAGE_KEYS.theme, theme);
     document
       .querySelector('meta[name="theme-color"]')
-      ?.setAttribute('content', theme === 'dark' ? '#06101c' : '#f5f8fb');
+      ?.setAttribute('content', theme === 'dark' ? '#181817' : '#fafafa');
   }, [theme]);
 
   const toggleTheme = useCallback(() => {

@@ -11,14 +11,14 @@ export default function Contact() {
         <SectionHeading
           id="contact-title"
           eyebrow="Contato"
-          title="Vamos construir algo útil?"
-          description="Tem um projeto, oportunidade ou desafio em mente? Envie uma mensagem ou escolha um canal direto."
+          title="Vamos conversar"
+          description="Para projetos, oportunidades ou dúvidas, envie uma mensagem ou fale comigo por um dos canais abaixo."
         />
 
         <div className="contact-grid">
           <div className="contact-panel">
             <span className="eyebrow">Canais diretos</span>
-            <h3>Uma boa conversa pode ser o começo de uma ótima solução.</h3>
+            <h3>Fale comigo pelo canal que preferir.</h3>
             <p>
               Respondo assim que possível. Para ajudar, conte o contexto, o objetivo e o prazo
               esperado.

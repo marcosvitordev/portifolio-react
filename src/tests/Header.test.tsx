@@ -22,10 +22,11 @@ describe('Header', () => {
 
   it('persiste a preferência quando o tema é alternado', async () => {
     const user = userEvent.setup();
+    document.documentElement.dataset.theme = 'light';
     render(<Header />);
 
-    await user.click(screen.getByRole('button', { name: /ativar tema claro/i }));
-    expect(document.documentElement.dataset.theme).toBe('light');
-    expect(localStorage.getItem('marcos-portfolio-theme')).toBe('light');
+    await user.click(screen.getByRole('button', { name: /ativar tema escuro/i }));
+    expect(document.documentElement.dataset.theme).toBe('dark');
+    expect(localStorage.getItem('marcos-portfolio-theme')).toBe('dark');
   });
 });

@@ -15,9 +15,9 @@ export function Skills() {
       <div className="container">
         <SectionHeading
           id="skills-title"
-          eyebrow="Tecnologias"
-          title="Ferramentas escolhidas com intenção"
-          description="Um repertório full stack organizado por contexto — sem barras de porcentagem arbitrárias."
+          eyebrow="Habilidades"
+          title="Tecnologias que utilizo"
+          description="Ferramentas e linguagens que fazem parte do meu trabalho e dos meus estudos."
         />
 
         <div className="filter-row" role="group" aria-label="Filtrar tecnologias por categoria">

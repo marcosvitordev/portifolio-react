@@ -14,9 +14,9 @@ export function About() {
       <div className="container">
         <SectionHeading
           id="about-title"
-          eyebrow="Sobre"
-          title="Tecnologia com contexto humano"
-          description="Minha trajetória combina educação, desenvolvimento de software e projetos voltados a desafios reais."
+          eyebrow="Sobre mim"
+          title="Um pouco sobre minha trajetória"
+          description="Formação, experiência e o caminho que venho construindo no desenvolvimento de software."
         />
 
         <div className="about-grid">
@@ -40,7 +40,7 @@ export function About() {
 
           <div className="about-content">
             <span className="eyebrow">Desde 2020 no desenvolvimento web</span>
-            <h3>Curiosidade técnica, disciplina e vontade de transformar ideias em sistemas.</h3>
+            <h3>Desenvolvimento de software, aprendizado e tecnologia.</h3>
             <p>
               Sou Analista de Sistemas, formado em Análise e Desenvolvimento de Sistemas pelo IFAC e
               estudante de Engenharia de Software. Trabalho com o ciclo completo de aplicações:

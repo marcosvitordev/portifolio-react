@@ -8,7 +8,7 @@ Portfólio profissional de **Marcos Vitor**, Analista de Sistemas e Desenvolvedo
 
 ## Funcionalidades
 
-- tema claro/escuro com preferência do sistema, troca manual, persistência e prevenção de flash;
+- tema claro por padrão, troca manual para o modo escuro, persistência e prevenção de flash;
 - navegação sticky, menu mobile, scroll spy, deep links e atalho para o conteúdo;
 - seções de experiência e formação baseadas no currículo existente;
 - tecnologias organizadas por categoria, com filtros e descrições;

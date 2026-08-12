@@ -1,4 +1,4 @@
-import { ArrowUpRight, TerminalSquare } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import { Icon } from '@/components/common/Icon';
 import { navigationItems } from '@/data/navigation';
 import { socialLinks } from '@/data/socialLinks';
@@ -10,17 +10,9 @@ export function Footer() {
       <div className="footer-grid container">
         <div className="footer-intro">
           <a className="brand" href="#home" aria-label="Voltar ao início">
-            <span className="brand-mark" aria-hidden="true">
-              <TerminalSquare />
-            </span>
-            <span>
-              marcosvitor<span>.dev</span>
-            </span>
+            marcosvitordev
           </a>
-          <p>
-            Software bem construído nasce do encontro entre contexto, engenharia e cuidado com quem
-            usa.
-          </p>
+          <p>Portfólio pessoal de Marcos Vitor, analista de sistemas e desenvolvedor full stack.</p>
         </div>
 
         <div>

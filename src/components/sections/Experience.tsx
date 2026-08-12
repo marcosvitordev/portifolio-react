@@ -8,9 +8,9 @@ export function Experience() {
       <div className="container">
         <SectionHeading
           id="experience-title"
-          eyebrow="Experiência"
-          title="Tecnologia, ensino e prática"
-          description="Experiências que desenvolveram tanto competências técnicas quanto comunicação e colaboração."
+          eyebrow="Minha trajetória"
+          title="Experiência profissional"
+          description="Atuação com desenvolvimento, suporte e ensino de tecnologia."
           align="left"
         />
 

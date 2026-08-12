@@ -8,9 +8,9 @@ export function Education() {
       <div className="container">
         <SectionHeading
           id="education-title"
-          eyebrow="Formação"
-          title="Base acadêmica e aprendizado contínuo"
-          description="Formação multidisciplinar conectando software, informática e gestão."
+          eyebrow="Estudos"
+          title="Formação acadêmica"
+          description="Graduações e cursos que fazem parte da minha formação profissional."
         />
 
         <div className="education-grid">
@@ -36,7 +36,7 @@ export function Education() {
         <div className="certifications-block">
           <div>
             <span className="eyebrow">Formação complementar</span>
-            <h3>Cursos que ampliam a prática</h3>
+            <h3>Cursos e certificações</h3>
           </div>
           <div className="certification-list">
             {certifications.map((item) => (
