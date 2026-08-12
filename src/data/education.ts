@@ -32,9 +32,19 @@ export const education: Education[] = [
 ];
 
 export const certifications: Certification[] = [
-  { name: 'Desenvolvimento Web Completo', issuer: 'Udemy', period: '2025 — 2026', workload: '120h' },
+  {
+    name: 'Desenvolvimento Web Completo',
+    issuer: 'Udemy',
+    period: '2025 — 2026',
+    workload: '120h',
+  },
   { name: 'Clube Full Stack', issuer: 'Udemy', period: '2025 — 2026', workload: '113h' },
-  { name: 'Introdução ao Desenvolvimento Web', issuer: 'UFAC', period: '2024 — 2025', workload: '120h' },
+  {
+    name: 'Introdução ao Desenvolvimento Web',
+    issuer: 'UFAC',
+    period: '2024 — 2025',
+    workload: '120h',
+  },
   { name: 'Front-end do Zero', issuer: 'DIO', period: '2024', workload: '75h' },
   { name: 'Linux para Iniciantes', issuer: 'DIO', period: '2024', workload: '30h' },
   { name: 'Algoritmos e Lógica', issuer: 'Udemy', period: '2023', workload: '30h' },

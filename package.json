@@ -20,8 +20,7 @@
     "@emailjs/browser": "^4.4.1",
     "lucide-react": "^1.31.0",
     "react": "^19.2.8",
-    "react-dom": "^19.2.8",
-    "react-simple-typewriter": "^5.0.1"
+    "react-dom": "^19.2.8"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

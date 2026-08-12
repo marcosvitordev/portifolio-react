@@ -18,10 +18,9 @@ export function useTheme() {
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
     localStorage.setItem(STORAGE_KEYS.theme, theme);
-    document.querySelector('meta[name="theme-color"]')?.setAttribute(
-      'content',
-      theme === 'dark' ? '#06101c' : '#f5f8fb',
-    );
+    document
+      .querySelector('meta[name="theme-color"]')
+      ?.setAttribute('content', theme === 'dark' ? '#06101c' : '#f5f8fb');
   }, [theme]);
 
   const toggleTheme = useCallback(() => {
