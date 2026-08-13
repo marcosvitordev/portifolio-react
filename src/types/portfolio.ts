@@ -24,6 +24,7 @@ export interface Project {
   status: ProjectStatus;
   year?: number;
   featured: boolean;
+  primary?: boolean;
   highlights?: string[];
 }
 

@@ -3,6 +3,15 @@ import userEvent from '@testing-library/user-event';
 import Projects from '@/components/sections/Projects';
 
 describe('Projects', () => {
+  it('apresenta o Gestão Médica Municipal como projeto principal', () => {
+    render(<Projects />);
+
+    expect(screen.getByText(/projeto principal · produto real/i)).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: /gestão médica municipal/i })).toBeInTheDocument();
+    expect(screen.getByText(/prontuário e contrarreferência/i)).toBeInTheDocument();
+    expect(screen.getByText(/operação itinerante offline/i)).toBeInTheDocument();
+  });
+
   it('filtra por categoria e busca por tecnologia sem recarregar', async () => {
     const user = userEvent.setup();
     render(<Projects />);
@@ -24,7 +33,9 @@ describe('Projects', () => {
     const firstCard = screen.getAllByRole('article')[0];
     expect(firstCard).toBeDefined();
     if (!firstCard) return;
-    await user.click(within(firstCard).getByRole('button', { name: /detalhes/i }));
+    await user.click(
+      within(firstCard).getByRole('button', { name: /conhecer o projeto|detalhes/i }),
+    );
 
     expect(screen.getByRole('dialog')).toBeInTheDocument();
     await user.keyboard('{Escape}');

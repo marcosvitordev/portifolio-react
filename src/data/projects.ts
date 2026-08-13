@@ -20,6 +20,36 @@ export const projectCategories: Array<'Todos' | ProjectCategory> = [
 
 export const projects: Project[] = [
   {
+    id: 'gestao-medica',
+    title: 'Gestão Médica Municipal',
+    summary:
+      'Plataforma de saúde municipal que conecta regulação, atendimento, prontuário integrado e retorno clínico em uma única jornada.',
+    description:
+      'O SGMM evoluiu de uma solução concentrada em cadastro e regulação para uma plataforma que acompanha toda a linha assistencial. O mesmo atendimento preserva os vínculos entre paciente, município, instituto, profissional, agenda, prontuário, documentos e conclusão clínica, incluindo operação itinerante em locais com conectividade limitada.',
+    image: medicalImage,
+    imageAlt: 'Dashboard institucional do Sistema de Gestão Médica Municipal',
+    technologies: [
+      'Next.js',
+      'Node.js',
+      'Express.js',
+      'TypeScript',
+      'Prisma ORM',
+      'DigitalOcean Spaces',
+    ],
+    categories: ['Full Stack', 'Sistemas'],
+    status: 'Privado',
+    featured: true,
+    primary: true,
+    highlights: [
+      'Regulação, autorização e agenda integradas',
+      'Prontuário clínico e contrarreferência',
+      'Documentos, PDFs e assinaturas',
+      'Atendimento itinerante offline',
+      'Sincronização segura sem duplicidade',
+      'Relatórios, auditoria e governança',
+    ],
+  },
+  {
     id: 'centro-pokemon',
     title: 'Centro Pokémon — Sistema de Gestão',
     summary: 'Pokédex full stack com autenticação, CRUD, paginação e filtros dinâmicos.',
@@ -75,27 +105,6 @@ export const projects: Project[] = [
       'Auditoria',
       'Controle de sessão',
     ],
-  },
-  {
-    id: 'gestao-medica',
-    title: 'Gestão Médica Municipal',
-    summary: 'Plataforma SaaS para integrar procedimentos médicos entre instituições e municípios.',
-    description:
-      'Fluxo digital seguro para solicitações, encaminhamentos e retornos, com dashboards específicos por perfil, rastreabilidade e armazenamento em nuvem.',
-    image: medicalImage,
-    imageAlt: 'Dashboard do instituto no sistema de gestão médica municipal',
-    technologies: [
-      'Next.js',
-      'Node.js',
-      'Express.js',
-      'TypeScript',
-      'Prisma ORM',
-      'DigitalOcean Spaces',
-    ],
-    categories: ['Full Stack', 'Sistemas'],
-    status: 'Privado',
-    featured: true,
-    highlights: ['Dashboards por perfil', 'Rastreabilidade', 'Armazenamento de documentos'],
   },
   {
     id: 'gestao-socios',

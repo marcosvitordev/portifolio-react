@@ -59,7 +59,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
       }}
     >
       <div
-        className="project-modal"
+        className={`project-modal${project.primary ? ' project-modal--primary' : ''}`}
         ref={dialogRef}
         role="dialog"
         aria-modal="true"

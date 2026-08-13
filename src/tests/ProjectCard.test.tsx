@@ -7,7 +7,7 @@ describe('ProjectCard', () => {
   it('exibe link de repositório válido e abre detalhes', async () => {
     const user = userEvent.setup();
     const onOpen = vi.fn();
-    const project = projects[0];
+    const project = projects.find((item) => item.id === 'centro-pokemon');
     expect(project).toBeDefined();
     if (!project) return;
 
