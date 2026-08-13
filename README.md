@@ -136,7 +136,7 @@ A suíte cobre Header, ThemeToggle, Hero, ProjectCard, ProjectFilters, Projects,
 
 ## Deploy
 
-O repositório contém `_redirects` e `_headers` compatíveis com Netlify. O pipeline não realiza deploy automático: publicação e credenciais permanecem sob controle do proprietário.
+O deploy no Netlify está configurado em `netlify.toml` com `npm run build` e publicação da pasta `dist`, gerada pelo Vite. Os arquivos `_redirects` e `_headers` também são copiados para essa pasta durante o build. O pipeline não realiza deploy automático: publicação e credenciais permanecem sob controle do proprietário.
 
 ## Histórico da modernização
 
