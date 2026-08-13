@@ -417,17 +417,40 @@
 
 @media (max-width: 600px) {
   .hero {
-    padding-top: var(--space-12);
+    padding-top: var(--space-6);
+  }
+
+  .hero-grid {
+    row-gap: var(--space-4);
+  }
+
+  .hero-copy {
+    display: contents;
+  }
+
+  .hero-intro {
+    order: 1;
+    margin: 0;
   }
 
   .hero h1 {
+    order: 2;
+    margin: 0;
     font-size: clamp(2.35rem, 10.5vw, 3rem);
+  }
+
+  .hero-visual {
+    order: 3;
+    width: min(42vw, 10rem);
+    margin: 0 auto;
   }
 
   .hero-role {
     align-items: center;
+    order: 4;
     flex-direction: column;
     gap: var(--space-3);
+    margin: 0;
     font-size: var(--text-sm);
   }
 
@@ -437,10 +460,21 @@
 
   .hero-actions {
     display: grid;
+    order: 6;
     width: 100%;
     max-width: 22rem;
-    margin-inline: auto;
+    margin: var(--space-2) auto 0;
     grid-template-columns: 1fr;
+  }
+
+  .hero-lead {
+    order: 5;
+    margin-top: 0;
+  }
+
+  .hero-location {
+    order: 7;
+    margin-top: 0;
   }
 
   .hero-actions .text-link {
