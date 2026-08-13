@@ -481,6 +481,10 @@
     grid-column: auto;
     justify-self: center;
   }
+
+  .about-image-wrap {
+    display: none;
+  }
 }
 
 @media (max-width: 425px) {
