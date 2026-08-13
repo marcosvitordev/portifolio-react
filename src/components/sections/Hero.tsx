@@ -1,7 +1,10 @@
 import { ArrowDown, ArrowRight, Download, MapPin } from 'lucide-react';
 import profileImage from '@/assets/foto2.png';
 import resume from '@/assets/CV.pdf';
+import { TypewriterText } from '@/components/common/TypewriterText';
 import { socialLinks } from '@/data/socialLinks';
+
+const professionalTitle = 'Analista de Sistemas & Full Stack Developer.';
 
 export function Hero() {
   return (
@@ -20,7 +23,9 @@ export function Hero() {
           <h1 id="hero-title">Marcos Vitor</h1>
           <p className="hero-role">
             <span aria-hidden="true" />
-            <strong>Analista de Sistemas &amp; Full Stack Developer</strong>
+            <strong>
+              <TypewriterText text={professionalTitle} />
+            </strong>
           </p>
           <p className="hero-lead">
             Sou apaixonado por tecnologia e pelo desenvolvimento de soluções úteis. Crio aplicações

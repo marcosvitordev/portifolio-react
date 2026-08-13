@@ -128,7 +128,7 @@
   font-weight: 500;
 }
 
-.hero-role span {
+.hero-role > span {
   width: 3.5rem;
   height: 1px;
   background: var(--color-subtle);
@@ -136,10 +136,38 @@
 
 .hero-role strong {
   display: block;
+  flex: 1;
+  width: 100%;
   max-width: 100%;
   min-width: 0;
   font-weight: 500;
   overflow-wrap: anywhere;
+}
+
+.typewriter-text {
+  display: grid;
+  width: 100%;
+  max-width: 100%;
+}
+
+.typewriter-text::before,
+.typewriter-content {
+  grid-area: 1 / 1;
+}
+
+.typewriter-text::before {
+  content: attr(data-text);
+  visibility: hidden;
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  width: 1px;
+  height: 1em;
+  margin-left: 0.18em;
+  background: currentColor;
+  vertical-align: -0.1em;
+  animation: typewriter-blink 0.75s steps(1) infinite;
 }
 
 .hero-lead {
@@ -336,6 +364,12 @@
   }
 }
 
+@keyframes typewriter-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
 @media (max-width: 900px) {
   .hero-grid {
     width: min(calc(100% - 2rem), var(--container));
@@ -367,8 +401,17 @@
   }
 
   .hero-visual {
+    display: grid;
+    order: 2;
+    visibility: visible;
     width: min(72vw, 20rem);
     margin: 0 auto var(--space-8);
+    opacity: 1;
+  }
+
+  .hero-visual .portrait-frame,
+  .hero-visual img {
+    display: block;
   }
 }
 
@@ -388,7 +431,7 @@
     font-size: var(--text-sm);
   }
 
-  .hero-role span {
+  .hero-role > span {
     width: 2.5rem;
   }
 
