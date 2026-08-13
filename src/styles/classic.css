@@ -485,6 +485,23 @@
   .about-image-wrap {
     display: none;
   }
+
+  .about-grid {
+    display: block;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .about-content {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .about-content > h3,
+  .about-content > p {
+    width: 100%;
+    max-width: 36rem;
+  }
 }
 
 @media (max-width: 425px) {
