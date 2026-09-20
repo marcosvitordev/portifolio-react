@@ -1,7 +1,7 @@
 export type Theme = 'light' | 'dark';
 
 export type ProjectCategory =
-  'Full Stack' | 'Front-end' | 'Back-end' | 'Sistemas' | 'Acadêmicos' | 'Mobile';
+  'Full Stack' | 'Front-end' | 'Back-end' | 'Sistemas' | 'Acadêmicos' | 'Mobile' | 'Desktop';
 
 export type ProjectStatus = 'Concluído' | 'Em evolução' | 'Privado';
 
