@@ -325,6 +325,86 @@
   font-size: var(--text-xs);
 }
 
+.company-card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 4rem);
+  margin-top: var(--space-16);
+  padding: clamp(1.25rem, 4vw, 3rem);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface-solid);
+}
+
+.company-identity {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-5);
+  min-width: 0;
+}
+
+.company-logo {
+  width: 100%;
+  max-width: 24rem;
+  overflow: hidden;
+  aspect-ratio: 3 / 1;
+  border-radius: var(--radius-sm);
+  background: #fff;
+}
+
+.company-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.company-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0.45rem 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  color: var(--color-heading);
+  font-size: var(--text-xs);
+  font-weight: 600;
+}
+
+.company-content {
+  min-width: 0;
+}
+
+.company-content h3 {
+  margin-top: var(--space-3);
+  font-size: var(--text-2xl);
+  letter-spacing: -0.025em;
+}
+
+.company-content > p {
+  margin-top: var(--space-4);
+  color: var(--color-muted);
+}
+
+.company-registration {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+}
+
+.company-registration strong {
+  color: var(--color-heading);
+}
+
+.company-registration span {
+  font-variant-numeric: tabular-nums;
+}
+
+.company-content .button {
+  margin-top: var(--space-6);
+}
+
 .timeline {
   position: relative;
   display: grid;

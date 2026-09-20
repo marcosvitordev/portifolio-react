@@ -1,6 +1,7 @@
 import { Code2, GraduationCap, MapPinned, Target } from 'lucide-react';
 import aboutImage from '@/assets/foto1.jpg';
 import { SectionHeading } from '@/components/common/SectionHeading';
+import { CompanyCard } from '@/components/sections/CompanyCard';
 
 const principles = [
   { icon: Code2, title: 'Construção ponta a ponta', text: 'Do modelo de dados à interface final.' },
@@ -63,6 +64,7 @@ export function About() {
             </div>
           </div>
         </div>
+        <CompanyCard />
       </div>
     </section>
   );

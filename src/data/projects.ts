@@ -161,17 +161,9 @@ export const projects: Project[] = [
     image: managementImage,
     imageAlt:
       'Dashboard do Átrio Gestão com indicadores patrimoniais, gráficos e navegação lateral',
-    technologies: [
-      'Python',
-      'CustomTkinter',
-      'SQLite',
-      'Pillow',
-      'ReportLab',
-      'PyInstaller',
-    ],
+    technologies: ['Python', 'CustomTkinter', 'SQLite', 'Pillow', 'ReportLab', 'PyInstaller'],
     categories: ['Desktop', 'Sistemas'],
-    repositoryUrl:
-      'https://github.com/marcosvitordev/Sistema_de_gestao_python',
+    repositoryUrl: 'https://github.com/marcosvitordev/Sistema_de_gestao_python',
     status: 'Concluído',
     featured: true,
     highlights: [
