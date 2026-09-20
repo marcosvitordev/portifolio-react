@@ -153,18 +153,36 @@ export const projects: Project[] = [
   },
   {
     id: 'gestao-python',
-    title: 'Sistema de Gestão em Python',
-    summary: 'CRUD modular para controle de registros com persistência em SQLite.',
+    title: 'Átrio Gestão — Patrimônio e Equipamentos',
+    summary:
+      'Sistema desktop para gestão patrimonial com dashboard, manutenções, relatórios e backups.',
     description:
-      'Projeto de aprendizagem focado em operações de cadastro, edição, exclusão e consulta, integrando Python e banco de dados local.',
+      'Aplicação desenvolvida em Python com interface moderna em CustomTkinter e persistência em SQLite. Oferece sete telas para gerenciar patrimônios, movimentações, manutenções, relatórios, backups e configurações. Inclui fotos dos equipamentos, responsáveis, garantias, histórico de alterações, exportação em PDF e CSV, além de executável para Windows e ambiente de demonstração independente.',
     image: managementImage,
-    imageAlt: 'Interface do sistema de gestão desenvolvido em Python',
-    technologies: ['Python', 'SQLite'],
-    categories: ['Back-end', 'Sistemas', 'Acadêmicos'],
-    repositoryUrl: 'https://github.com/marcosvitordev/Sistema_de_gestao_python',
+    imageAlt:
+      'Dashboard do Átrio Gestão com indicadores patrimoniais, gráficos e navegação lateral',
+    technologies: [
+      'Python',
+      'CustomTkinter',
+      'SQLite',
+      'Pillow',
+      'ReportLab',
+      'PyInstaller',
+    ],
+    categories: ['Desktop', 'Sistemas'],
+    repositoryUrl:
+      'https://github.com/marcosvitordev/Sistema_de_gestao_python',
     status: 'Concluído',
-    featured: false,
-    highlights: ['CRUD', 'Persistência SQLite', 'Organização modular'],
+    featured: true,
+    highlights: [
+      'Dashboard com indicadores e gráficos',
+      'Gestão de patrimônios com fotos e histórico',
+      'Controle de movimentações e manutenções',
+      'Relatórios em PDF e CSV',
+      'Backup e restauração de dados',
+      'Executável Windows e modo de demonstração',
+      '17 testes automatizados',
+    ],
   },
   {
     id: 'portfolio-react',
