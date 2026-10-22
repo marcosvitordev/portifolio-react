@@ -1,5 +1,5 @@
 import { Code2, GraduationCap, MapPinned, Target } from 'lucide-react';
-import aboutImage from '@/assets/foto1.jpg';
+import aboutImage from '@/assets/foto1.png';
 import { SectionHeading } from '@/components/common/SectionHeading';
 import { CompanyCard } from '@/components/sections/CompanyCard';
 
